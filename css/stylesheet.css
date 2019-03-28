@@ -1,0 +1,259 @@
+/* CSS Document */
+@charset "UTF-8";
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, button, input, select, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-align: left; }
+
+/*行の高さをフォントサイズと同じにしています*/
+body {
+  line-height: 1.0; }
+
+/*文字サイズの自動調整を無効化しています*/
+body {
+  line-height: 1.0;
+  webkit-text-size-adjust: 100%;
+  }
+
+/*-------------共通ルール------------*/
+body{
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	font-size: 18px;
+	color: #707070;
+}
+body:before {
+  position: fixed;
+  top: -10px;
+  left: 0;
+  z-index: 100;
+  content: '';
+  width: 100%;
+  height: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.8);
+}
+
+.fadein {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1.5s;
+}
+
+
+/*--------------header--------------*/
+header{
+	width:1100px;
+	height: 820px;
+	margin: 0 auto;
+}
+#theme{
+	width:100%px;
+	text-align: center;
+	margin-top:50px;
+	margin-bottom: 100px;
+}
+
+.magritte{
+	display: none;
+}
+
+/*------------countainer--------------*/
+
+.table{
+	height:70px;
+}
+.txt{
+	width:1100px;
+	margin:100px auto 50px;
+	line-height: 2em;
+}
+.main{
+	margin:200px auto;
+}
+
+
+/*-------------life--------------*/
+
+.lovesong{
+	padding: 50px 0;
+	height: 520px;
+	width:1100px;
+	position: relative;
+}
+.lovesong p{
+	display: inline-block;
+	position: absolute;
+	top:40%;
+	font-weight: bold;
+	
+}
+.lovesong img{
+	width:340px;
+	height:420px;
+	float: right;
+}
+.lovesong::after {
+  position: absolute;
+  bottom: 120px;
+  right: 10px;
+  z-index: -1;
+  content: '';
+  width: 320px;
+  height: 10px;
+  box-shadow: 0 40px 20px rgba(0,0,0,.6);
+  border-radius: 80px / 5px;
+}
+
+.clear{
+	clear:both;
+	margin-top:0;
+}
+
+
+/*------------style------------*/
+
+
+.jockey{
+	padding: 50px 0 0 0;
+	height: 520px;
+	width:960px;
+	position: relative;
+}
+.jockey p{
+	display: inline-block;
+	position: absolute;
+	top:40%;
+	font-weight: bold;
+	
+}
+.jockey img{
+	width:445px;
+	float: right;
+}
+.jockey::after {
+  position: absolute;
+  bottom: 170px;
+  right: 10px;
+  z-index: -1;
+  content: '';
+  width: 420px;
+  height: 10px;
+  box-shadow: 0 40px 20px rgba(0,0,0,.6);
+  border-radius: 200px / 5px;
+}
+
+.port{
+	margin-top:10px;
+	margin-right: 30px;
+	margin-bottom: 200px;
+	width:310px;
+	float: left;
+}
+.port p{
+	text-align: center;
+}
+
+/*-------------Woks----------------*/
+
+
+.gallary{
+	margin:100px auto;
+	text-align: center;
+}
+
+
+/*----------source----------*/
+
+.txt a{
+	text-decoration: none;
+	color:#707070;
+	transition: .3s;
+	transform: scale(1);
+	display: inline-block;
+}
+.txt a:hover{
+	transform: scale(1.05);
+	opacity: 0.6
+}
+.txt ul{
+	list-style: square;
+}
+
+
+
+/*----------footer----------*/
+footer{
+	width:100%;
+	background-color:#010101;
+	height:215px;
+}
+
+.contents{
+	width:500px;
+	margin:0 auto;
+	letter-spacing: -.4em;
+}
+.bt{
+	display: inline-block;
+	color:aliceblue;
+	letter-spacing: normal;
+	font-family: 'EB Garamond', serif;
+	font-size: 2em;
+	padding-top:20px;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+}
+.bt::after {
+  position: absolute;
+  bottom: 15px;
+  left: 20%;
+  content: '';
+  width: 60%;
+  height: 2px;
+  background:#010101;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .5s;
+}
+.bt:hover::after {
+  transform: scale(1, 1);
+}
+.btt{
+	width:498px;
+	height:50px;
+	border:1px solid aliceblue;
+}
+.his{
+	width:248px;
+	height: 50px;
+	border:1px solid aliceblue;
+}
+
+.bt:hover{
+	background-color: rgba(210,231,251,1.00);
+	color:#101010;
+	transition: 0.5s;
+}
+
+
+
+
+
+
