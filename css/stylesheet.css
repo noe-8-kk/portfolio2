@@ -58,19 +58,17 @@ body:before {
 
 /*--------------header--------------*/
 header{
-	width:1100px;
-	height: 820px;
-	margin: 0 auto;
+	width:100%;
 }
 #theme{
-	width:100%px;
+	width:100%;
 	text-align: center;
-	margin-top:50px;
-	margin-bottom: 100px;
+	margin:100px auto 200px;
 }
 
 .magritte{
 	display: none;
+	margin: 0 auto;
 }
 
 /*------------countainer--------------*/
@@ -78,14 +76,16 @@ header{
 .table{
 	height:70px;
 }
-.txt{
-	width:1100px;
-	margin:100px auto 50px;
-	line-height: 2em;
-}
 .main{
 	margin:200px auto;
+	width: 100%;
 }
+.txt{
+	margin:100px auto 50px;
+	line-height: 2em;
+	width: 80%;
+}
+
 
 
 /*-------------life--------------*/
@@ -93,7 +93,7 @@ header{
 .lovesong{
 	padding: 50px 0;
 	height: 520px;
-	width:1100px;
+	width:80%;
 	position: relative;
 }
 .lovesong p{
@@ -103,7 +103,7 @@ header{
 	font-weight: bold;
 	
 }
-.lovesong img{
+.l_s_i{
 	width:340px;
 	height:420px;
 	float: right;
@@ -131,9 +131,10 @@ header{
 
 .jockey{
 	padding: 50px 0 0 0;
-	height: 520px;
-	width:960px;
+	height: 100%;
+	width:80%;
 	position: relative;
+	margin-bottom: 200px
 }
 .jockey p{
 	display: inline-block;
@@ -142,7 +143,7 @@ header{
 	font-weight: bold;
 	
 }
-.jockey img{
+.j_i{
 	width:445px;
 	float: right;
 }

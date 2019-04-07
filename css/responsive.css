@@ -1,3 +1,58 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+@media(max-width:1024px){
+	.magritte{
+		width:50%;
+		height: 50%;
+	}
+	.table{
+		width: 70%;
+		height: 70%;
+	}
+	.l_s_i,.j_i{
+		float: none;
+	}
+	.l_nav,.j_nav{
+		margin:0 auto;
+	}
+	.lovesong p,.jockey p{
+		position: static;
+		text-align: center;
+	}
+	.lovesong::after,.jockey::after{
+		display: none;
+	}
+	.port{
+		margin: 10px auto 20px;
+		float: none;
+		
+	}
+}
+
+
+@media(max-width:480px){
+	.txt{
+		font-size: 10px;
+	}
+	.lovesong p,.jockey p{
+		font-size: 10px;
+	}
+	.l_s_i{
+		width: 80%;
+	    height: 80%;
+	}	
+	.j_i{
+		width: 100%;
+	}
+	footer .contents{
+		width: 100%;
+	}
+	.btt{
+		width: 100%;
+	}
+	.his{
+		width: 49%;
+	}
+}
